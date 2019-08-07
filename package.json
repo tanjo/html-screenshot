@@ -1,0 +1,17 @@
+{
+  "name": "html-screenshot",
+  "version": "1.0.0",
+  "description": "generate screenshot for html files",
+  "bin": {
+    "html-screenshot": "index.js"
+  },
+  "author": "tanjo",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.19.0"
+  },
+  "engines": {
+    "node": ">=11.13.0",
+    "npm": ">=6.10.3"
+  }
+}
