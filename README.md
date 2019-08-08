@@ -1,5 +1,11 @@
 # html-screenshot
 
-## CHANGELOG
+## Install
+
+```
+npm install -g tanjo/html-screenshot
+```
+
+## Change Log
 
 [here](./CHANGELOG.md)
