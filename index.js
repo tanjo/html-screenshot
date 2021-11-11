@@ -17,13 +17,15 @@ program
   .option('-p, --pdf', 'generae pdf')
   .option('-w, --wait-for <number>', 'The time that waits for loading.', parseInt, 3000)
   .option('-c, --click <query>', 'click selector', collect, [])
+  .option('-de, --delete-element <query>', 'delete element', collect, [])
   .parse(process.argv);
 
 (async () => {
     const htmlScreenshot = new HtmlScreenshot();
     await htmlScreenshot.init();
     htmlScreenshot.waitFor = program.waitFor;
-    htmlScreenshot.click = program.click;
+    htmlScreenshot.click = program.click ?? [];
+    htmlScreenshot.deleteElement = program.deleteElement ?? [];
     await htmlScreenshot.goto(program.args[0], true, program.pdf);
     await htmlScreenshot.close();
 })();

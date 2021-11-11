@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Ver. 2.0.0 (2021/11/11)
+
+- puppeteer と commander を大幅更新
+
 ## Ver. 1.0.1 (2019/08/08)
 
 - ローカルファイル対応
