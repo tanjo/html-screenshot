@@ -23,10 +23,9 @@ program
 (async () => {
     const htmlScreenshot = new HtmlScreenshot();
     await htmlScreenshot.init();
-    htmlScreenshot.waitFor = program.waitFor;
-    htmlScreenshot.click = program.click ?? [];
-    htmlScreenshot.deleteElement = program.deleteElement ?? [];
-    await htmlScreenshot.goto(program.args[0], true, program.pdf);
+    htmlScreenshot.waitFor = program.opts().waitFor;
+    htmlScreenshot.click = program.opts().click ?? [];
+    htmlScreenshot.deleteElement = program.opts().deleteElement ?? [];
+    await htmlScreenshot.goto(program.args[0], true, program.opts().pdf);
     await htmlScreenshot.close();
 })();
-
