@@ -1,6 +1,6 @@
 {
   "name": "html-screenshot",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "generate screenshot for html files",
   "bin": {
     "html-screenshot": "index.js"

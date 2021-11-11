@@ -1,9 +1,10 @@
 # CHANGELOG
 
-## Ver. 2.0.1 (2021/11/11)
+## Ver. 2.0.2 (2021/11/11)
 
 - puppeteer と commander を大幅更新
 - 要素の削除を可能に
+- JavaScript のオフ設定を導入
 
 ## Ver. 1.0.1 (2019/08/08)
 
